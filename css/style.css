@@ -5,6 +5,7 @@
     --col-background-lighter: #336;
     --col-background: #224;
     --col-background-darker: #1f1e33; /* CAMELLIA GOD */
+    --col-background-darkest: #090920;
 }
 
 body
@@ -37,7 +38,7 @@ a
 {
     width: 100%;
     text-align: center;
-    background-color: black;
+    background-color: var(--col-background-darkest);
     padding-bottom: 0.5rem;
 }
 
