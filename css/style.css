@@ -99,3 +99,22 @@ a
 {
     flex-grow: 1;
 }
+
+.social-icons
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.social-icons>a
+{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.social-icons>a>img
+{
+    height: 2rem;
+}
