@@ -2,6 +2,8 @@
 
 :root
 {
+    --col-accent-lighter: #9cf;
+    --col-accent: #69f;
     --col-background-lighter: #336;
     --col-background: #224;
     --col-background-darker: #1f1e33; /* CAMELLIA GOD */
@@ -22,6 +24,7 @@ body
 a
 {
     text-decoration: none;
+    color: var(--col-accent);
 }
 
 .header
@@ -32,6 +35,7 @@ a
     font-weight: 900;
     padding: 0.5rem;
     background-color: var(--col-background-lighter);
+    color: white;
 }
 
 .footer
@@ -55,7 +59,7 @@ a
     justify-content: center;
 }
 
-.project
+.projects-item
 {
     width: 100%;
     overflow: hidden;
@@ -66,7 +70,7 @@ a
     position: relative;
 }
 
-.project-background
+.projects-background
 {
     position: absolute;
     display: block;
@@ -76,7 +80,7 @@ a
     height: 100%;
 }
 
-.project-overlay
+.projects-overlay
 {
     z-index: 1;
     background: rgba(0, 0, 0, 0.5);
@@ -88,14 +92,14 @@ a
     justify-content: center;
 }
 
-.project-title
+.projects-title
 {
     display: block;
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
 }
 
-.project:hover
+.projects-item:hover
 {
     flex-grow: 1;
 }
@@ -117,4 +121,59 @@ a
 .social-icons>a>img
 {
     height: 2rem;
+}
+
+.project-content
+{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    height: 100%;
+    background-color: var(--col-background);
+    text-align: center;
+    position: relative;
+}
+
+.project-title
+{
+    display: block;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    padding-top: 3rem;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75));
+}
+
+.project-background
+{
+    position: absolute;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 8rem;
+    top: 0;
+}
+
+hr
+{
+    height: 1px;
+    border: none;
+    background-color: var(--col-accent-lighter);
+    margin: 0.5rem;
+}
+
+.project-description
+{
+    margin-top: 1rem;
+}
+
+ul
+{
+    display: inline-block;
+    text-align: left;
+    margin: auto;
 }
