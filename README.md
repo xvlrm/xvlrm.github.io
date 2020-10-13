@@ -1,2 +1,2 @@
 # xvlrm.github.io
-Personal portfolio
+Personal profile and portfolio
