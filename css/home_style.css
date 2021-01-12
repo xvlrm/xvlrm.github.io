@@ -1,0 +1,104 @@
+
+body
+{
+    --col-background: #282C34;
+    --col-background-lighter: #383C44;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: white;
+    overflow: hidden;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.center-box
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    background: linear-gradient(0deg, var(--col-background) 0%, var(--col-background-lighter) 50%, var(--col-background) 100%);
+}
+
+.title
+{
+    font-size: 4rem;
+    animation-duration: 2s;
+    animation-name: flicker;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flicker
+{
+    from {
+        color: #aaa;
+    }
+
+    50% {
+        color: #fff;
+    }
+    to {
+        color: #aaa;
+    }
+}
+
+
+.links
+{
+    font-size: 2rem;
+}
+
+a.link
+{
+    margin-top: 2rem;
+    transition: 0.25s;
+    background-color: transparent;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-bottom: 2px solid transparent;
+}
+
+.links:hover a.link
+{
+    color: #aaa;
+}
+
+.links a.link:hover
+{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-color: white;
+}
+
+.social-icons
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.social-icons>a
+{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.social-icons>a>img
+{
+    height: 2rem;
+}
