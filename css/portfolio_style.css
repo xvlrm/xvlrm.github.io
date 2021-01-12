@@ -56,7 +56,7 @@ a
 .section
 {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     width: 25%;
     padding: 0.5rem;
     background-color: var(--col-background);
