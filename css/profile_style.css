@@ -25,6 +25,11 @@ a
     color: var(--col-text);
 }
 
+a.nav:hover
+{
+    color: white;
+}
+
 a.current
 {
     color: white;
